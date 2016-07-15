@@ -1,0 +1,12 @@
+<project name="ant proj" default="JenkinsEnvInfo">			
+	<target name="JenkinsEnvInfo">
+		<property environment="env" />
+		<echo message="${env.BUILD_NUMBER}"/>
+		<echo message="${env.BUILD_TAG}"/>
+		<echo message="${env.BUILD_DISPLAY_NAME}"/>
+		<echo message="${env.JOB_NAME}"/>
+		<echo message="${env.JENKINS_URL}"/>
+		<echo message="${env.BUILD_URL}"/>
+		</target>
+
+</project>
